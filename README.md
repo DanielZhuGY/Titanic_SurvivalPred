@@ -9,6 +9,12 @@ An entry level competition in [**kaggle**](https://www.kaggle.com/competitions/t
 - Accuracy: approximately 75%
 
 ## Idea
+- Women and children first!
+
+- The lowest resecue rate is in the Third class.
+  - The water enters the fastest after the impact.
+  - Inadequate emergency escape measures.
+
 |Variable|Explanation|
 |--------|-----------|
 |Pclass|Passangers in Cabin 3 are less likely to survive compare to the rest Cabin|
