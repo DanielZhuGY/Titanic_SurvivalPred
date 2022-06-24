@@ -1,7 +1,7 @@
 # Titanic_SurvivalPred
 ## Topic: Titanic - Machine Learning from Disaster
 
-An entry level competition in [**kaggle**](https://www.kaggle.com/competitions/titanic/overview).
+An entry level ML competition in [**kaggle**](https://www.kaggle.com/competitions/titanic/overview).
 
 ## About the Model
 - Method: Logistic Regression
@@ -102,3 +102,14 @@ $ \theta^{(n+1)} = \theta^{(n)} - \alpha  \frac{d}{d\theta^{(n)}} J(\theta^{(n)}
   -$\alpha$ is learning rate
   </sup></sub>
 
+## Result
+
+The accuracy of this model is around 75%.（Not stable, sometimes the accuracy will drop down to 70%）
+
+### Future work
+
+In SGD function. The code can be optimized.
+1.Choosing batch_Data from the Data_pool randomly but not repeated.
+2.Adjust the batch size.
+
+Apply Neural Network on this task.
