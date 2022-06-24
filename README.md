@@ -11,13 +11,13 @@ An entry level competition in [**kaggle**](https://www.kaggle.com/competitions/t
 ## Analysis
 - Be gentle! Lady first.
 
-![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/fsr.png?raw=true)
-![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/msr.png?raw=true)
+![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/image/fsr.png?raw=true)
+![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/image/msr.png?raw=true)
 
 
 - The lowest resecue rate is in the Third class.
 
-![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/pclss.png?raw=true)
+![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/image/pclss.png?raw=true)
 > The water enters the fastest after the impact.
 > 
 > Inadequate emergency escape measures.
