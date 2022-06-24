@@ -17,7 +17,7 @@ An entry level competition in [**kaggle**](https://www.kaggle.com/competitions/t
 
 [pic_source](https://titanicfacts.net/titanic-maiden-voyage/)
 
-- Be gentle! Lady first.
+- Lady first.
 
 ![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/image/fsr.png?raw=true)
 ![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/image/msr.png?raw=true)
