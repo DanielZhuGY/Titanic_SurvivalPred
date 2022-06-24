@@ -8,7 +8,7 @@ An entry level competition in [**kaggle**](https://www.kaggle.com/competitions/t
 - Fitting: SGD
 - Accuracy: approximately 75%
 
-## Idea
+## Analysis
 - Be gentle! Lady first.
 
 ![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/fsr.png?raw=true)
