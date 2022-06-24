@@ -12,11 +12,11 @@ An entry level competition in [**kaggle**](https://www.kaggle.com/competitions/t
 - Women and children first!
 
 ![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/fsr.png?raw=true)
-
 ![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/msr.png?raw=true)
 
 
 - The lowest resecue rate is in the Third class.
+![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/pl.png?raw=true)
   - The water enters the fastest after the impact.
   - Inadequate emergency escape measures.
 
