@@ -6,16 +6,18 @@ An entry level ML competition in [**kaggle**](https://www.kaggle.com/competition
 ## About the Model
 - Method: Logistic Regression
 - Fitting: SGD
-- Accuracy: approximately 75%
+- Accuracy: 77%
 
 ## Analysis
 
-### Main Parameters
+### Parameters
 - The route of Titanic
 
 ![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/image/route.png?raw=true)
 
 [pic_source](https://titanicfacts.net/titanic-maiden-voyage/)
+
+Passanger board from France seems to have higher survival rate.
 
 - Lady first.
 
@@ -42,21 +44,15 @@ From the table above, we can notice that the survive rate of children is highest
 > 
 > Inadequate emergency escape measures.
 
-### Secondary Parameters
 
-- Fare
+### Embarked place, Age category, Gender and Cabin Class will be our the main focus in our ML model.
 
-Pclass has already included the information of fare. And there are some missing information in fare column. Thus, we are
- not going to use fare as a parameter.
-
-
-### Age category, Gender and Class will be our main focus in our ML model.
-
-|Parameters|Explanation|Category|
-|--------|-----------|----|
-|Pclass|Passangers in Cabin 3 are less likely to survive compare to the rest Cabin|First Class_2, Second Class_1, Third Class_-1|
-|Sex|Male passangers are less likely to survive|Male_0, Female_1|
-|Age|Children have higher survive rate|Children_2,Else_1,Unknown_0|
+|Parameters|Category|
+|--------|-----------|
+|Embarked|Cherbourg_1,Else_0|
+|Pclass|Third Class_1,Else_0|
+|Sex|Female_1, Male_-1|
+|Age|Children_2,Else_1,Unknown_0|
 
 
 ## Model
@@ -92,9 +88,10 @@ $ \frac{d}{d\theta} J(\theta) =  -\frac{1}{m} \sum\limits_{i=1}^m \[ x^{(i)}(y^{
 SGD
 |Parameter Name|Value|
 |-|-|
-|Batch_size|100|
-|Learning_rate|0.01|
-|Iteration|20000|
+|Batch_size|80|
+|Epoches|2000|
+|Learning_rate|0.001|
+|Iteration|30|
 
 $ \theta^{(n+1)} = \theta^{(n)} - \alpha  \frac{d}{d\theta^{(n)}} J(\theta^{(n)}) $
 
@@ -104,12 +101,8 @@ $ \theta^{(n+1)} = \theta^{(n)} - \alpha  \frac{d}{d\theta^{(n)}} J(\theta^{(n)}
 
 ## Result
 
-The accuracy of this model is around 75%.（Not stable, sometimes the accuracy will drop down to 70%）
+The accuracy of this model is 77%.
 
 ### Future work
-
-In SGD function. The code can be optimized.
-1.Choosing batch_Data from the Data_pool randomly but not repeated.
-2.Adjust the batch size.
 
 Apply Neural Network on this task.
