@@ -108,4 +108,4 @@ $ \theta^{(n+1)} = \theta^{(n)} - \alpha  \frac{d}{d\theta^{(n)}} J(\theta^{(n)}
 
 - Adjust data pretreatment method. Improve acc to 80%.
 
-- Apply Neural Network on this task.
+- Apply Artifitial Neural Network on this task.
