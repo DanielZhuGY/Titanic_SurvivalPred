@@ -16,7 +16,7 @@ data_train = data_train.fillna(0)
 header = data_train.columns.values
 data_train = data_train.values
 
-#######
+###== Data Pretreatment ==###
 y_train = data_train[:,1]
 x_train = []
 x_need = [2,4,5,11]
@@ -27,7 +27,7 @@ for i in x_need:
 
 _,n = np.shape(x_train)
 
-## Data Pretreatment
+
 ## Numerical Expression
 for i in range(n):
 
@@ -56,7 +56,7 @@ for i in range(n):
     
 x_train = np.array(x_train).T
 
-#####
+###== LogisticRegression ==###
 class LogisticRegression:
     def __init__(self,x,y):
         n,d = np.shape(x)
@@ -111,12 +111,13 @@ class LogisticRegression:
             error_l.append(self.loss(theta))
         print('Finished!!')
         return(theta,error_l)
-###
+
+      ## Run the regression ##
     
 regre = LogisticRegression(x_train, y_train)
-h_theta,error = regre.SGD(80,2000,30,0.001)
+h_theta,error = regre.SGD(80,2000,30,0.001) ## (Batch_size, Epoch, Iteration, Learning_Rate)
 
-#####
+###== Processing Test Data(Same as pretreatment) ==###
 data_test = pd.read_csv('test.csv')
 data_test = data_test.fillna(0)
 t_header = data_test.columns.values
@@ -127,7 +128,6 @@ print(t_header)
 x_need_test = [1,3,4,10]
 for i in x_need_test:
   x_test.append(data_test[:,i])
-print(np.shape(x_test))
 _,n_t = np.shape(x_test)
 
 for i in range(n_t):
@@ -153,8 +153,7 @@ for i in range(n_t):
   else:
     x_test[3][i] = 0
 
-
-x_test = np.vstack((x_test,np.ones((418))))
+x_test = np.vstack((x_test,np.ones((n_t))))
 y_test = np.dot(x_test.T,h_theta)
 
 
@@ -169,8 +168,9 @@ for i in range(len(y_test_dum)):
 y_test = y_test_dum.T
 result = np.vstack((data_test[:,0],y_est))
 
+### Log the Result ##
 
-with open('fresult.csv', 'w', newline='') as csvfile:
+with open('result.csv', 'w', newline='') as csvfile:
   writer = csv.writer(csvfile, delimiter=",")
   writer.writerow(('PassengerId','Survived'))
   writer.writerows(result.T)
