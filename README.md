@@ -1,7 +1,7 @@
 # Titanic_SurvivalPred
 ## Topic: Titanic - Machine Learning from Disaster
 
-An entry level ML competition in [**kaggle**](https://www.kaggle.com/competitions/titanic/overview).
+An entry level ML competition from [**kaggle**](https://www.kaggle.com/competitions/titanic/overview).
 
 ## About the Model
 - Method: Logistic Regression
