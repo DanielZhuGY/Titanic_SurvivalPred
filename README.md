@@ -96,12 +96,13 @@ $ \theta^{(n+1)} = \theta^{(n)} - \alpha  \frac{d}{d\theta^{(n)}} J(\theta^{(n)}
   </sup></sub>
 
 ### Performance
+- Convergence Performance
 
 ![Convergence](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/image/converge.png?raw=true)
 
 
 
-The accuracy of this model is 77%.
+- The accuracy of this model is 77%.
 
 ## Future work
 
