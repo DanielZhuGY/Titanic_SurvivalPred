@@ -11,20 +11,21 @@ An entry level ML competition in [**kaggle**](https://www.kaggle.com/competition
 ## Analysis
 
 ### Parameters
+
+Let's have a look at the data. Try to dig out some info.
+
 - The route of Titanic
 
 ![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/image/route.png?raw=true)
 
 [pic_source](https://titanicfacts.net/titanic-maiden-voyage/)
 
-Passanger board from France seems to have higher survival rate.
+Survival rate: C(France)>=Q(Ireland)>S(UK)
 
-- Lady first.
+- The lives of women and children were to be saved first
 
 ![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/image/fsr.png?raw=true)
 ![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/image/msr.png?raw=true)
-
-- Children first.
 
  |Category|  Male|  Female | MaleRate|  FemaleRate  |Rate|
  |--------|------|---------|---------|--------------|----|
@@ -34,15 +35,10 @@ Passanger board from France seems to have higher survival rate.
 |   50-90   | 47     | 17 |     12.8   |     94.1 | 34.4
 | Unknown   |124      |53  |    12.9    |    67.9 | 29.4
 
-From the table above, we can notice that the survive rate of children is highest. The survive rate of adult male is less than 20%. 
-
 - The lowest resecue rate is in the Third class.
 
 ![alt text](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/image/pclss.png?raw=true)
 
-> The water enters the fastest after the impact.
-> 
-> Inadequate emergency escape measures.
 
 
 ### Embarked place, Age category, Gender and Cabin Class will be our the main focus in our ML model.
@@ -99,10 +95,16 @@ $ \theta^{(n+1)} = \theta^{(n)} - \alpha  \frac{d}{d\theta^{(n)}} J(\theta^{(n)}
   -$\alpha$ is learning rate
   </sup></sub>
 
-## Result
+### Performance
+
+![Convergence](https://github.com/DanielZhuGY/Titanic_SurvivalPred/blob/main/image/converge.png?raw=true)
+
+
 
 The accuracy of this model is 77%.
 
-### Future work
+## Future work
 
-Apply Neural Network on this task.
+- Adjust data pretreatment method. Improve acc to 80%.
+
+- Apply Neural Network on this task.
