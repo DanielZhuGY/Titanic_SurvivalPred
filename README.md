@@ -54,7 +54,7 @@ Survival rate: C(France)>=Q(Ireland)>S(UK)
 ## Model
 ### Logistic Regression
 
-$ f(x) = \theta^T x $ 
+$f(x) = \theta^T x$ 
 
 
 <sub><sup>
@@ -63,19 +63,19 @@ $ f(x) = \theta^T x $
   
 Sigmoid function :
 
-$ h_\theta (x) = \frac{1}{(1+e^{-\theta^T x})} $ 
+$h_\theta (x) = \frac{1}{(1+e^{-\theta^T x})}$ 
 
 Derivative:
 
-$ \frac{d}{d\theta} h_\theta (x) = (1-h_\theta (x))h_\theta (x) f(x)' $
+$\frac{d}{d\theta} h_\theta (x) = (1-h_\theta (x))h_\theta (x) f(x)'$
 
 Loss Function (Cross-Entropy Loss):
 
-$ J(\theta) = -\frac{1}{m} \sum\limits_{i=1}^m \[y^{(i)}log(h_\theta (x^{(i)})) + (1-y^{(i)})log(1-h_\theta (x^{(i)}))\] $
+$J(\theta) = -\frac{1}{m} \sum\limits_{i=1}^m \[y^{(i)}log(h_\theta (x^{(i)})) + (1-y^{(i)})log(1-h_\theta (x^{(i)}))\]$
 
 Derivative:
 
-$ \frac{d}{d\theta} J(\theta) =  -\frac{1}{m} \sum\limits_{i=1}^m \[ x^{(i)}(y^{(i)}-h_\theta (x^{(i)})) \]$
+$\frac{d}{d\theta} J(\theta) =  -\frac{1}{m} \sum\limits_{i=1}^m \[ x^{(i)}(y^{(i)}-h_\theta (x^{(i)})) \]$
 
 
 
@@ -89,7 +89,7 @@ SGD
 |Learning_rate|0.001|
 |Iteration|30|
 
-$ \theta^{(n+1)} = \theta^{(n)} - \alpha  \frac{d}{d\theta^{(n)}} J(\theta^{(n)}) $
+$\theta^{(n+1)} = \theta^{(n)} - \alpha  \frac{d}{d\theta^{(n)}} J(\theta^{(n)})$
 
 <sub><sup>
   -$\alpha$ is learning rate
